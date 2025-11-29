@@ -6,6 +6,19 @@ export default defineNuxtConfig({
   
   css: ['~/assets/css/tailwind.css'],
   
+  nitro: {
+    preset: 'vercel',
+    externals: {
+      inline: ['@supabase/supabase-js']
+    }
+  },
+  
+  vite: {
+    optimizeDeps: {
+      include: ['@supabase/supabase-js']
+    }
+  },
+  
   app: {
     head: {
       title: 'GuiaLocal - Descubra os melhores lugares',
