@@ -2,15 +2,15 @@
   <div class="min-h-screen flex flex-col bg-background">
     <main class="flex-1">
       <div class="w-full mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 py-8">
-      <div class="mb-8">
+        <div class="mb-8">
         <h1 class="font-display text-3xl font-bold mb-2">Promoções</h1>
         <p class="text-muted-foreground">
           As melhores ofertas da semana
         </p>
-      </div>
+        </div>
 
-      <!-- Promotions Grid -->
-      <div v-if="promotionsData.length > 0" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Promotions Grid -->
+        <div v-if="promotionsData.length > 0" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
           v-for="item in promotionsData"
           :key="item.promotion.id"
@@ -26,11 +26,11 @@
             </div>
           </NuxtLink>
         </div>
-      </div>
-      
-      <div v-else class="text-center py-12">
+        </div>
+        
+        <div v-else class="text-center py-12">
         <p class="text-muted-foreground">Nenhuma promoção ativa no momento</p>
-      </div>
+        </div>
       </div>
     </main>
   </div>
