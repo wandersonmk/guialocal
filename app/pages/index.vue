@@ -110,7 +110,7 @@
   </div>
 </template><script setup lang="ts">
 import { ArrowRight, Sparkles, TrendingUp } from 'lucide-vue-next'
-import { stores } from '~/utils/mockData'
+import { stores, cities } from '~/utils/mockData'
 
 const selectedCity = ref(cities[0])
 const { toggleFavorite, isFavorite } = useFavorites()

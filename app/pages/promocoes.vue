@@ -35,7 +35,7 @@
     </main>
   </div>
 </template><script setup lang="ts">
-import { stores } from '~/utils/mockData'
+import { stores, cities } from '~/utils/mockData'
 
 const selectedCity = ref(cities[0])
 

@@ -335,7 +335,7 @@
 
 <script setup lang="ts">
 import { MapPin, Star, Clock, Phone, MessageCircle, Truck, Store as StoreIcon, Heart, ArrowLeft, Navigation, Instagram, Globe, Play, X } from 'lucide-vue-next'
-import { stores } from '~/utils/mockData'
+import { stores, cities } from '~/utils/mockData'
 import { cn } from '~/utils/cn'
 
 const route = useRoute()
