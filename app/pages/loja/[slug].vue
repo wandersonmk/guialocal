@@ -319,8 +319,6 @@
         </div>
       </div>
     </main>
-
-    <LayoutAppFooter />
   </div>
 
   <div v-else class="min-h-screen flex items-center justify-center">
