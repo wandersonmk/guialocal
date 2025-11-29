@@ -1,73 +1,75 @@
-# Welcome to your Lovable project
+# Nuxt Minimal Starter
 
-## Project info
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-**URL**: https://lovable.dev/projects/289fb468-72ba-42ab-9375-f3d368683698
+## Setup
 
-## How can I edit this code?
+Make sure to install dependencies:
 
-There are several ways of editing your application.
+```bash
+# npm
+npm install
 
-**Use Lovable**
+# pnpm
+pnpm install
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/289fb468-72ba-42ab-9375-f3d368683698) and start prompting.
+# yarn
+yarn install
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# bun
+bun install
 ```
 
-**Edit a file directly in GitHub**
+## Development Server
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Start the development server on `http://localhost:3000`:
 
-**Use GitHub Codespaces**
+```bash
+# npm
+npm run dev
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# pnpm
+pnpm dev
 
-## What technologies are used for this project?
+# yarn
+yarn dev
 
-This project is built with:
+# bun
+bun run dev
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Production
 
-## How can I deploy this project?
+Build the application for production:
 
-Simply open [Lovable](https://lovable.dev/projects/289fb468-72ba-42ab-9375-f3d368683698) and click on Share -> Publish.
+```bash
+# npm
+npm run build
 
-## Can I connect a custom domain to my Lovable project?
+# pnpm
+pnpm build
 
-Yes, you can!
+# yarn
+yarn build
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# bun
+bun run build
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
