@@ -1,7 +1,5 @@
 <template>
   <div class="min-h-screen flex flex-col bg-background">
-    <LayoutAppHeader v-model="selectedCity" />
-
     <main class="flex-1">
       <div class="w-full mx-auto px-6 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 py-8">
       <div class="mb-8">
@@ -35,12 +33,8 @@
       </div>
       </div>
     </main>
-
-    <LayoutAppFooter />
   </div>
-</template>
-
-<script setup lang="ts">
+</template><script setup lang="ts">
 import { stores } from '~/utils/mockData'
 
 const selectedCity = ref(cities[0])

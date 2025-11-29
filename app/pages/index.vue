@@ -1,7 +1,5 @@
 <template>
   <div class="min-h-screen flex flex-col bg-background">
-    <LayoutAppHeader v-model="selectedCity" />
-
     <main class="flex-1">
       <!-- Hero Section -->
       <section class="w-full mb-8">
@@ -109,12 +107,8 @@
         </div>
       </section>
     </main>
-
-    <LayoutAppFooter />
   </div>
-</template>
-
-<script setup lang="ts">
+</template><script setup lang="ts">
 import { ArrowRight, Sparkles, TrendingUp } from 'lucide-vue-next'
 import { stores } from '~/utils/mockData'
 
