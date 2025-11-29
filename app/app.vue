@@ -1,6 +1,10 @@
 <template>
   <div>
-    <NuxtPage />
+    <LayoutAppHeader />
+    <main>
+      <NuxtPage />
+    </main>
+    <LayoutAppFooter />
   </div>
 </template>
 
