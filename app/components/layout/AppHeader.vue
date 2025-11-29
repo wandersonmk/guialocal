@@ -87,7 +87,7 @@ import { cn } from '~/utils/cn'
 
 const route = useRoute()
 const mobileMenuOpen = ref(false)
-const selectedCity = defineModel<string>({ default: 'São Paulo' })
+const selectedCity = defineModel<string>({ default: cities[0] })
 
 const navLinks = [
   { href: '/', label: 'Início' },
