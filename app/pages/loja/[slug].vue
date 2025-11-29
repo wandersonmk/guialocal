@@ -1,7 +1,5 @@
 <template>
   <div v-if="store" class="min-h-screen flex flex-col bg-background">
-    <LayoutAppHeader v-model="selectedCity" />
-
     <main class="flex-1">
       <!-- Hero Section -->
       <div class="relative h-80 md:h-96">
