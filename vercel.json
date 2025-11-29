@@ -1,7 +1,4 @@
 {
-  "buildCommand": "cd nuxt-app && npm install && npm run build",
-  "outputDirectory": "nuxt-app/.vercel/output/static",
-  "devCommand": "cd nuxt-app && npm run dev",
-  "installCommand": "cd nuxt-app && npm install",
-  "framework": null
+  "installCommand": "npm install",
+  "buildCommand": "npm run build"
 }
