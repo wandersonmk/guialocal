@@ -13,14 +13,14 @@
         </div>
 
         <!-- Favorites Grid -->
-        <div v-if="favoriteStores.length > 0" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <StoreCard
-          v-for="store in favoriteStores"
-          :key="store.id"
-          :store="store"
-          :is-favorite="true"
-          @toggle-favorite="toggleFavorite"
-        />
+        <div v-if="favoriteStores.length > 0" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 auto-rows-max">
+        <div v-for="store in favoriteStores" :key="store.id" class="max-w-sm">
+          <StoreCard
+            :store="store"
+            :is-favorite="true"
+            @toggle-favorite="toggleFavorite"
+          />
+        </div>
         </div>
         
         <div v-else class="text-center py-12">
